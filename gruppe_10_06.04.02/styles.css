@@ -1,0 +1,678 @@
+body {
+    margin: 0;
+    color: #241406;
+    background-color: #3E4657;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+header {
+    font-family: 'teko', serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+p {
+    font-family: 'oswald', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-left: 1rem;
+}
+
+.ret p,
+.ret h2 {
+    max-width: 270px;
+}
+
+
+/********************** MENU DESKTOP***********************/
+
+header nav a:link,
+header nav a:visited,
+header nav a:active {
+    color: white;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    margin-top: 0;
+
+}
+
+header nav {
+    flex-direction: column;
+    margin: 1.3rem;
+    text-align: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+/*********************** BURGER MENU ***********************/
+
+.hidden {
+    display: none;
+}
+
+#menu_knap {
+    color: white;
+    display: inline-block;
+    padding-right: 0.2rem;
+    font-size: 2rem;
+}
+
+#menu_burger {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+#menu_burger a {
+    padding-right: 0.5rem;
+}
+
+#menu_burger li {
+    margin: 1.6rem;
+}
+
+
+.hide_burgermenu {
+    display: none;
+}
+
+#menu_knap:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:800px) {
+    .hide_burgermenu {
+        display: block;
+    }
+
+    .hide_menu {
+        display: none;
+    }
+}
+
+#logo {
+    background-image: url("logo_hvid.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+#logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#logo {
+    margin-top: 0px;
+
+}
+}
+
+/***************** DESKTOP ********************/
+
+#splash {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#splash img {
+    padding-top: -15rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+video {
+    display: flex;
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 20vw;
+}
+
+#forside .top img {
+    display: flex;
+    z-index: 2;
+    height: 50%;
+    width: 50%;
+    margin-top: 10rem;
+    margin-left: -6rem;
+}
+
+#forside .column2 h3 {
+    color: white;
+    flex-grow: 1;
+    flex-basis: 256px;
+    margin-top: 0rem;
+    margin-left: 35rem;
+    text-align: left;
+
+}
+
+#forside .column2 h1 {
+    color: white;
+    flex-grow: 1;
+    flex-basis: 256px;
+    margin-top: -24rem;
+    margin-left: 35rem;
+    text-align: left;
+     font-size: 25px;
+    font-family: 'Baloo Chettan', cursive;
+
+}
+
+#forside .column {
+    color: black;
+    font-size: 40px;
+    flex-grow: 1;
+    flex-basis: 256px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -45rem;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00FF1C;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: -60px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/***************** PORTFOLIO DESKTOP ********************/
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+#portfolio h1 {
+    padding-bottom: 0.3rem;
+    margin: 0;
+}
+
+#portfolio h2 {
+    padding: 0;
+}
+
+#portfolio .column_small1 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 200px;
+    margin-top: 10rem;
+    margin-left: 40rem;
+    flex-grow: 1;
+    width: 50%;
+
+}
+
+#portfolio .column_small2 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 200px;
+    margin-top: 5rem;
+    margin-left: 40rem;
+    flex-grow: 1;
+    width: 50%;
+}
+
+#portfolio .column_big {
+    flex-grow: 2;
+    flex-basis: 200px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: -200px;
+}
+
+#portfolio .column_big_img {
+    margin-left: 15rem;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#portfolio .resultat_knap h3 {
+
+    background-color: #00FF1C;
+    color: white;
+    width: 18rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    padding: 0.6rem;
+}
+#portfolio video {
+
+    margin-top: -25vw;
+}
+/********** FOOTER *********/
+
+footer {
+    padding: 1.2rem;
+    background-color: #FF6A00;
+    margin-top: 5rem;
+}
+
+footer p {
+    color: black;
+    font-size: 20px;
+}
+
+footer h3 {
+    color: black;
+    font-size: 30px;
+}
+
+
+/***************** TABLET ********************/
+
+
+@media only screen and (max-width: 639px) {
+    #splash .hide {
+        display: none;
+    }
+}
+
+#logo {
+    background-image: url("logo_hvid.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+#logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#logo {
+    margin-top: 0px;
+
+}
+
+#splash {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#splash img {
+    padding-top: -15rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+video {
+    display: flex;
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: -30rem;
+}
+
+#forside .top img {
+    display: flex;
+    z-index: 2;
+    height: 50%;
+    width: 50%;
+    margin-top: 15vw;
+    margin-left: -5vw;
+}
+
+#forside .column2 h3 {
+    color: white;
+    flex-grow: 1;
+    flex-basis: 256px;
+    margin-top: 0rem;
+    margin-left: 35rem;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+#forside .column2 h1 {
+    color: white;
+    flex-grow: 1;
+    flex-basis: 256px;
+    margin-top: -24rem;
+    margin-left: 35rem;
+    text-align: left;
+
+}
+
+#forside .column {
+    color: black;
+    font-size: 40px;
+    flex-grow: 1;
+    flex-basis: 256px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -45rem;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00FF1C;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: -60px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media only screen and (max-width: 639px) {
+    #splash .hide {
+        display: none;
+    }
+}
+
+header nav a:link,
+header nav a:visited,
+header nav a:active {
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00FF1C;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: -60px;
+}
+
+header nav a:hover {
+    background: #ffffff;
+    border: 1px solid #33FF00;
+    color: #33FF00;
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    margin-top: 0;
+
+}
+
+header nav {
+    flex-direction: column;
+    margin: 1.3rem;
+    text-align: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 2.5rem;
+}
+
+#portfolio h1 {
+    padding-bottom: 0.3rem;
+    margin: 0;
+}
+
+#portfolio h2 {
+    padding: 0;
+}
+
+#portfolio .column_small1 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 200px;
+    margin-top: 10rem;
+    margin-left: 40rem;
+    flex-grow: 1;
+    width: 50%;
+
+}
+
+#portfolio .column_small2 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 200px;
+    margin-top: 5rem;
+    margin-left: 40rem;
+    flex-grow: 1;
+    width: 50%;
+}
+
+#portfolio .column_big {
+    flex-grow: 2;
+    flex-basis: 200px;
+    width: 100%;
+    margin-top: -10rem;
+    margin-right: 20rem;
+}
+
+#portfolio .column_big_img {
+    margin-left: 15rem;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#portfolio .resultat_knap h3 {
+
+    background-color: #00FF1C;
+    color: white;
+    width: 18rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    padding: 0.6rem;
+}
+#mini {
+    margin-left: -25vw;
+}
+/********** FOOTER *********/
+
+footer {
+    padding: 1.2rem;
+    background-color: #FF6A00;
+    margin-top: 5rem;
+}
+
+footer p {
+    color: black;
+    font-size: 20px;
+}
+
+footer h3 {
+    color: black;
+    font-size: 30px;
+}
+/*********** Media queries ***************/
+
+@media screen and (max-width: 1024px) {
+    #forside .column2 h1 {
+      margin-left: 20px;
+      margin-top: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #forside .column2 h3 {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #forside .top img {
+      margin-left: 20px;
+      margin-top: 150px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   .button {
+       width: 380px;
+      margin-left: 380px;
+      margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   video {
+       margin-top: -300px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   #portfolio .resultat_knap h3{
+     width: 200px;
+       margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   #portfolio .column_big_img{
+     width: 50vw;
+       margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   #portfolio .column_small1{
+     width: 50vw;
+
+    }
+}
+@media screen and (max-width: 1024px) {
+   #portfolio h2{
+       font-size: 20px;
+       margin-left: -200px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   #portfolio p{
+       font-size: 20px;
+       margin-left: -200px;
+       width: 300px;
+    }
+}
+@media screen and (max-width: 1024px) {
+   header {
+      position: absolute;
+     width: 100vw;
+    }
+}
